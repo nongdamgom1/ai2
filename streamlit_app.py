@@ -52,11 +52,11 @@ if uploaded_file is not None:
     st.markdown("<h3>클래스별 확률:</h3>", unsafe_allow_html=True)
 
     if prediction == labels[0]:
-         st.write("중냉 꿋굿")
+         st.write("정말 맛난 중국식 냉면~~^^!!")
     elif prediction == labels[1]:
-         st.write("짜장면은 굿")
+         st.write("짜장면은 짱짱맨~")
     elif prediction == labels[2]:
-         st.write("짬뽕은 맵지만 맛있어!!")
+         st.write("오른손으로 비비고 왼손으로 비빈 짬뽕")
 
     for label, prob in zip(labels, probs):
         # HTML 및 CSS로 확률을 시각화
